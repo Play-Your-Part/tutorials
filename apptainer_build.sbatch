@@ -10,16 +10,8 @@
 #SBATCH --account YOUR_ACCOUNT
 
 OUTPUT_FILE="jsalt.sif"
-BASE_PATH=$(pwd)/
-
-rsync -a $BASE_PATH /tmp
-cd /tmp
 
 # build apptainer
-apptainer build --fakeroot --bind /dev/shm:/tmp $OUTPUT_FILE Apptainer
+apptainer build --fakeroot $OUTPUT_FILE Apptainer
+
 echo "Finished building $OUTPUT_FILE"
-
-echo "Copying SIF file..."
-cp $OUTPUT_FILE $BASE_PATH
-
-echo "Finished."
