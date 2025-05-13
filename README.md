@@ -2,7 +2,7 @@
 
 Make sure you have installed [Apptainer](https://apptainer.org/docs/user/main/introduction.html) in your machine.
 
-You can download the `jsalt.sif` file from huggingface by clicking [here]().
+You can download the `jsalt.sif` file from huggingface by clicking [here](https://huggingface.co/Play-Your-Part/tutorials-apptainer-sif-file/resolve/main/jsalt.sif).
 
 > **Note:** alternativelly, you can built the `jsalt.sif` from scratch, for instance using Slurm with:
 > ```
