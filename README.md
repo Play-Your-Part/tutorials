@@ -1,45 +1,49 @@
 ## Getting started
 
-Make sure you have installed [Apptainer](https://apptainer.org/docs/user/main/introduction.html) in your machine.
+Tutorials have only **one** requirement: Apptainer. So, make sure you have installed [Apptainer](https://apptainer.org/docs/user/main/introduction.html) in your machine.
 
-You can download the `jsalt.sif` file from huggingface by clicking [here](https://huggingface.co/Play-Your-Part/tutorials-apptainer-sif-file/resolve/main/jsalt.sif).
+Once you have apptainer running, the only thing is needed is to download our apptainer `jsalt.sif` file from huggingface by clicking [here](https://huggingface.co/Play-Your-Part/tutorials-apptainer-sif-file/resolve/main/jsalt.sif).
+This file contains everything we need inside.
 
-> **Note:** alternativelly, you can built the `jsalt.sif` from scratch, for instance using Slurm with:
-> ```
-> sbatch apptainer_build.sbatch
-> ```
-> You should first update the `.sbatch` file to match your credentials and computing, etc.
-
-(optional) Slurm: connect to a GPU node in interactive mode:
-```bash
-salloc -A YOUR_USER -p gpu -t 03:00:00 --gpus rtx3090:1
-```
-(optional) change default ollama `~/.ollama/models` folder to store the models to our current folder:
-```bash
-export APPTAINERENV_OLLAMA_MODELS="$(pwd)/.ollama/models"
-```
-
-Let's check if our apptainer is working:
-
+Finally, let's check if our apptainer is working:
+_(if you have a cluster, don't forget to connect to a node with GPU first, rtx3090 should be fine, e.g. `salloc -A YOUR_USER -p gpu -t 08:00:00 --gpus rtx3090:1`)_
 ```bash
 apptainer run --nv jsalt.sif
-
+```
+You should see you're now connected to `Apptainer>` in the terminal.
+If we do:
+```
 ls -lh
 ```
 We see the apptainer by default does not have access to the host current direction (the content of the `tutorials` folder).
 Let's close it with Ctrl+D and call run but with the `-H` flag to set the apptainer home directorey to the host current directory:
 
 ```bash
+cd to/your/tutorials
+
 apptainer run -H $(pwd) --nv jsalt.sif
 
 ls -lh
 ```
-Now we should see all our files.
-Let's try now try using gemma3-1b model with ollama:
+Now we should see all our tutorial files.
+
+> **Note:** alternatively to downloading the `.sif` file, you can built it from scratch, for instance using Slurm with:
+> ```
+> sbatch apptainer_build.sbatch
+> ```
+> You should first update the `.sbatch` file to match your credentials and computing, etc.
+
+
+Let's try now try using gemma3-1b model with ollama, once connected to our apptainer:
+
+> (optional) change default ollama `~/.ollama/models` folder to store the models to locally in our current tutorials folder:
+> ```bash
+> export APPTAINERENV_OLLAMA_MODELS="$(pwd)/.ollama/models"
+> ```
 
 ```bash
 ollama serve &
-ollama run gemma3:1b
+ollama run qwen2.5:14b
 
 >>> What model are you?
 ```
@@ -52,7 +56,7 @@ Type `python3` and paste the following code:
 
 ```python
 from langchain_ollama.chat_models import ChatOllama
-llm = ChatOllama(model="gemma3:1b", temperature=0)
+llm = ChatOllama(model="qwen2.5:14b", temperature=0)
 response = llm.invoke([
     ("system", "You are the best japanese translator in the world."
                "Translate the user sentence to casual japanese without explanations."),
@@ -61,6 +65,16 @@ response = llm.invoke([
 print(response.content)
 ```
 > いいね、JSALT Workshop 好きだね！ 😊
+
+Great! everything is working fine! we just need to download the dataset and that's it.
+
+### Dataset Preparation
+
+```bash
+cd datasets
+git clone git@github.com:RasaHQ/STAR.git
+```
+Make sure you end up with the STAR dataset in `datasets/STAR` with `dialogues` and `tasks` folders inside.
 
 
 ## Jupyter Notebook
@@ -101,14 +115,6 @@ get_ipython().system = os.system  # <- little hack
 !ollama serve &
 ```
 Note: the first two lines are a simple hack to allow running background processes (e.g. "`ollama serve &`") inside the notebook.
-
-### Dataset Preparation
-
-```bash
-cd datasets
-git clone git@github.com:RasaHQ/STAR.git
-```
-Make sure you end up with the STAR dataset in `datasets/STAR` with `dialogues` and `tasks` folders inside.
 
 ---
 
