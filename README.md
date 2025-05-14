@@ -50,6 +50,15 @@ ollama run qwen2.5:14b
 > I’m Gemma, a large language model created by the Gemma team at Google DeepMind.
 > I’m an open-weights model, which means I’m widely available for public use!
 
+> ⚠️ In case you're getting **x509: certificate signed by unknown authority** when ollama tries to download the model via HTTPS, make sure to set the `SSL_CERT_FILE` environment variable to point to the certificate files, for example:
+>```bash 
+> export SSL_CERT_FILE=/usr/lib/ssl/certs/ca-certificates.crt
+> ```
+> or from outside the apptainer:
+>```bash 
+> export APPTAINERENV_SSL_CERT_FILE=/usr/lib/ssl/certs/ca-certificates.crt
+> ```
+
 Pres Ctrl+D to close the chat.
 Let's try the following piece of Python code that uses [LangChain](https://github.com/langchain-ai/langchain) to interact with our [ollama](https://github.com/ollama/ollama) models.
 Type `python3` and paste the following code:
