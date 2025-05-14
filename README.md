@@ -73,9 +73,9 @@ response = llm.invoke([
 ])
 print(response.content)
 ```
-> いいね、JSALT Workshop 好きだね！ 😊
+> JSALTワークショップ大好きです
 
-Great! everything is working fine! we just need to download the dataset and that's it.
+Great! 😊 everything is working fine! we just need to download the dataset and that's it.
 
 ### Dataset Preparation
 
@@ -84,7 +84,7 @@ cd datasets
 git clone git@github.com:RasaHQ/STAR.git
 ```
 Make sure you end up with the STAR dataset in `datasets/STAR` with `dialogues` and `tasks` folders inside.
-
+> ⚠️ If you're getting an error message, clone STAR from outside the Apptainer inside the `datasets` folder.
 
 ## Jupyter Notebook
 
@@ -146,5 +146,5 @@ apptainer exec instance://jsalt python3 test_chatollama.py
 # once finished, we can stop the background instance
 apptainer instance stop jsalt
 ```
-> いいね、JSALT Workshop 好きだね！ 😊
+> JSALTワークショップ大好きです
 
