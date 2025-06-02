@@ -51,10 +51,7 @@ ollama run qwen2.5:14b
 > I’m an open-weights model, which means I’m widely available for public use!
 
 > ⚠️ In case you're getting **x509: certificate signed by unknown authority** when ollama tries to download the model via HTTPS, make sure to set the `SSL_CERT_FILE` environment variable to point to the certificate files, for example:
->```bash 
-> export SSL_CERT_FILE=/usr/lib/ssl/certs/ca-certificates.crt
-> ```
-> or from outside the apptainer:
+> _(from outside the apptainer)_
 >```bash 
 > export APPTAINERENV_SSL_CERT_FILE=/usr/lib/ssl/certs/ca-certificates.crt
 > ```
