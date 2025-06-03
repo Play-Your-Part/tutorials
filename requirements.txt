@@ -1,7 +1,9 @@
 print-color
 torch
+ollama
 langchain
 langchain-ollama
+langchain-huggingface
 dspy
 openai
 plotly
