@@ -145,3 +145,19 @@ apptainer instance stop jsalt
 ```
 > JSALTワークショップ大好きです
 
+## Unable to use Apptainer?
+
+Just make sure that you have ollama installed and the `requerements.txt`, that is, make sure you run (for instance inside a new conda environment):
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+pip install -r requirements.txt
+```
+If you have access to GPU, make sure your environment have CUDA installed.
+
+If your are running the tutorials on Google Colab, just run this cell:
+
+```bash
+!curl -fsSL https://ollama.com/install.sh | sh
+!pip install -r requirements.txt
+```
+That's it. Good luck! :)
