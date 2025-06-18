@@ -162,10 +162,6 @@ pip install -r requirements.txt
 ```
 If you have access to GPU, make sure your environment have CUDA installed.
 
-If your are running the tutorials on Google Colab, just run this cell:
+If your are running the tutorials on Google Colab, just click [here](http://colab.research.google.com/github/Play-Your-Part/tutorials/).
 
-```bash
-!curl -fsSL https://ollama.com/install.sh | sh
-!pip install -r requirements.txt
-```
 That's it. Good luck! :)
