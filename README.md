@@ -1,5 +1,5 @@
 # JSALT 2025 - ["Play Your Part"](https://jsalt2025.fit.vut.cz/play-your-part) Tutorials :sunglasses:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Play-Your-Part/tutorials/)
+:point_right: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Play-Your-Part/tutorials/)
 
 ---
 
