@@ -1,12 +1,20 @@
+# JSALT 2025 - ["Play Your Part"](https://jsalt2025.fit.vut.cz/play-your-part) Tutorials :sunglasses:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Play-Your-Part/tutorials/)
+
+---
+
 ## Getting started
 
-Tutorials have only **one** requirement: Apptainer. So, make sure you have installed [Apptainer](https://apptainer.org/docs/user/main/introduction.html) in your machine.
+> ⚠️ **NOTE:**
+> If you have **no access to compute**, click on the "Open In Colab" badge above and ignore this README. If you do have access to compute with GPU, then you can proceed.
 
-Once you have apptainer running, the only thing is needed is to download our apptainer `jsalt.sif` file from huggingface by clicking [here](https://huggingface.co/Play-Your-Part/tutorials-apptainer-sif-file/resolve/main/jsalt.sif).
+Tutorials have only **one** requirement: Apptainer. So, make sure you have installed [Apptainer](https://apptainer.org/docs/user/main/introduction.html) on your machine.
+
+Once you have Apptainer running, the only thing needed is to download our Apptainer `jsalt.sif` file from HuggingFace by clicking [here](https://huggingface.co/Play-Your-Part/tutorials-apptainer-sif-file/resolve/main/jsalt.sif).
 This file contains everything we need inside.
 
-Finally, let's check if our apptainer is working:
-_(if you have a cluster, don't forget to connect to a node with GPU first, rtx3090 should be fine, e.g. `salloc -A YOUR_USER -p gpu -t 08:00:00 --gpus rtx3090:1`)_
+Finally, let's check if our Apptainer is working:
+_(if you have a cluster, don't forget to connect to a node with GPU first, e.g. `salloc -A YOUR_USER -p gpu -t 08:00:00 --gpus rtx3090:1`)_
 ```bash
 apptainer run --nv jsalt.sif
 ```
