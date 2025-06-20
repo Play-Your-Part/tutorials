@@ -1,5 +1,18 @@
-# JSALT 2025 - ["Play Your Part"](https://jsalt2025.fit.vut.cz/play-your-part) Tutorials :sunglasses:
-:point_right: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Play-Your-Part/tutorials/)
+# JSALT 2025 - [Play Your Part](https://jsalt2025.fit.vut.cz/play-your-part) Tutorials :sunglasses:
+
+---
+
+## Resources
+
+### 📑 Slides & Videos
+
+- [📋 Google Slides (presentation)](https://docs.google.com/presentation/d/1fKxYFt0GVoXa3jw5I86qOt7zMMImxvGK7EuznvimTkI/edit?usp=sharing)
+- [🎥 Presentation Video (YouTube)](https://www.youtube.com/live/mdAttQ4DK24?si=wAC-abbxzXfZwRR_&t=945)
+
+### 📓 Tutorial Notebooks & Videos
+
+- [📔 Jupyter Notebooks (Open in Colab)](https://colab.research.google.com/github/Play-Your-Part/tutorials/) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Play-Your-Part/tutorials/)
+- [🎬 Tutorial Video (YouTube)](https://www.youtube.com/live/uBlTxmXxEG8?si=ys57p_2PQ57z_cjG&t=1131)
 
 ---
 
