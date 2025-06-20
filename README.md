@@ -3,22 +3,22 @@
 Below you will find a brief description of each of the 6 available tutorials in this repo:
 
 - [`1.single_llm_full_generation.ipynb`](1.single_llm_full_generation.ipynb) 
-   > Learn how to generate synthetic dialogues using a single LLM, including structured output, persona and scenario definitions, and saving/loading dialogues.
+   > _Learn how to generate synthetic dialogues using a single LLM, including structured output, persona and scenario definitions, and saving/loading dialogues._
 
 - [`2.multi-agent_generation.ipynb`](2.multi-agent_generation.ipynb) 
-   > Explore multi-agent dialogue generation by having two  LLM-based agents role-play different personas and interact with each other to create realistic conversations.
+   > _Explore multi-agent dialogue generation by having two  LLM-based agents role-play different personas and interact with each other to create realistic conversations._
 
 - [`3.multi-agent+orchestrator_generation.ipynb`](3.multi-agent+orchestrator_generation.ipynb)  
-   > Introduces orchestration: controlling and injecting instructions into agents during dialogue, enabling fine-grained control and scenario-driven conversational flows.
+   > _Introduces orchestration: controlling and injecting instructions into agents during dialogue, enabling fine-grained control and scenario-driven conversational flows._
 
 - [`4.dialog_analysis.ipynb`](4.dialog_analysis.ipynb)  
-   > Analyze and compare the structure and flow of generated synthetic dialogues versus real human dialogues using graph-based and qualitative methods.
+   > _Analyze and compare the structure and flow of generated synthetic dialogues versus real human dialogues using graph-based and qualitative methods._
 
 - [`5.mechanistic_interpretability.ipynb`](5.mechanistic_interpretability.ipynb)  
-   > Dive into mechanistic interpretability: learn how to probe, visualize, and manipulate the internal activations of LLMs using TransformerLens, including hands-on experiments with activation steering and direction ablation.
+   > _Dive into mechanistic interpretability: learn how to probe, visualize, and manipulate the internal activations of LLMs using TransformerLens, including hands-on experiments with activation steering and direction ablation._
 
 - [`6.binding_entities.ipynb`](6.binding_entities.ipynb)  
-   > Reproduce experiments from the paper "How do Language Models Bind Entities in Context?" to investigate how LLMs associate entities and attributes, and perform interventions in the activation space.
+   > _Reproduce experiments from the paper "How do Language Models Bind Entities in Context?" to investigate how LLMs associate entities and attributes, and perform interventions in the activation space._
 
 ---
 
