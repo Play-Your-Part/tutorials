@@ -27,12 +27,12 @@ Below you will find a brief description of each of the 6 available tutorials in 
 ### 📑 Slides & Videos
 
 - [📋 Google Slides (presentation)](https://docs.google.com/presentation/d/1fKxYFt0GVoXa3jw5I86qOt7zMMImxvGK7EuznvimTkI/edit?usp=sharing)
-- [🎥 Presentation Video (YouTube)](https://www.youtube.com/live/mdAttQ4DK24?si=wAC-abbxzXfZwRR_&t=945)
+- [🎥 Presentation Video (YouTube)](https://www.youtube.com/live/mdAttQ4DK24?si=pK52saMDpn9UCUOl&t=535)
 
 ### 📓 Tutorial Notebooks & Videos
 
 - [📔 Jupyter Notebooks (Open in Colab)](https://colab.research.google.com/github/Play-Your-Part/tutorials/) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Play-Your-Part/tutorials/)
-- [🎬 Tutorial Video (YouTube)](https://www.youtube.com/live/uBlTxmXxEG8?si=ys57p_2PQ57z_cjG&t=1131)
+- [🎬 Tutorial Video (YouTube)](https://www.youtube.com/live/uBlTxmXxEG8?si=gTIrrbGNKABjj97n&t=764)
 
 ---
 
