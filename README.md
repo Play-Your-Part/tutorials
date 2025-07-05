@@ -27,7 +27,7 @@ Below you will find a brief description of each of the 6 available tutorials in 
 ### 📑 Slides & Videos
 
 - [📋 Google Slides (presentation)](https://docs.google.com/presentation/d/1fKxYFt0GVoXa3jw5I86qOt7zMMImxvGK7EuznvimTkI/edit?usp=sharing)
-- [🎥 Presentation Video (YouTube)](https://www.youtube.com/live/mdAttQ4DK24?si=pK52saMDpn9UCUOl&t=535)
+- [🎥 Presentation Video (YouTube)](https://www.youtube.com/live/mdAttQ4DK24?si=pK52saMDpn9UCUOl)
 
 ### 📓 Tutorial Notebooks & Videos
 
